@@ -27,15 +27,16 @@ function somar(){
 }
 function somarAlert(){
      //entrada de dados
-     let base = window.prompt("Digite medida da base","0");
-     let altura = window.prompt("Digite medidas","0");
+     let numero1 = parseFloat(window.prompt("Digite o numero 1 ","0") );
+     let numero2 = parseFloat(window.prompt("Digite o numero 2 ","0") );
+     let numero3 = parseFloat(window.prompt("Digite o numero 3 ","0") );
  
      //processamento
-     let area = base * altura /2;
+     let soma = numero1 + numero2 + numero3;
  
      //saida
  
-     window.alert("A área é " + area);
+     window.alert("O Resultado da soma é " + soma);
 }
 
 function novosalario(){

@@ -1,39 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-     <meta charset="UTF-8">
-     <title> Exemplo 01</title>
-     <link href="css/bootstrap.min.css" rel="stylesheet">
-     <link href="exemplos.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="exemplo.css" rel="stylesheet">
+        <title> Questão 02</title>
+
     </head>
     <body>
-     <form>
-         <div class="form-group">
-             <label for="base"> Base</label><br>
-             <input type="number" name="base" placeholder="0.0 m" id="base"><br>
-
-              <label for="altura"> Altura</label><br>
-              <input type="number" name="altura" placeholder="0.0 m" id="altura"><br>
-
-              <label for="area"> Area </label><br>
-              <input type="number" name="area" placeholder="0.0 m²" id="area" readonly><br>
-              <input type="button" class="btn btn-dark" onclick="calculaArea2()" value="Calcular Área"><br>
-
-        </div>
-     </form>
-     <script src="exemplos.js"></script>
-     <script>
-         function calculaArea(){
-         //recuperação de entradas
-      var base   = document.getElementById("base").value;
-      let altura = document.getElementById("altura").value;
-
-      //processamento
-      var area = (base*altura)/2;
-
-     //saida
-      document.getElementById("area").value = area;
-    }
-     </script>
+        <form>
+            <div class="form-group">
+                <label for="numero1"> Número 1</label><br>
+                <input name="numero1" type="number" placeholder="0" id="numero1"><br>
+                <label for="numero2">Número 2</label><br>
+                <input name="numero2" type="number" placeholder="0" id="numero2"><br>
+                <label for="numero3">Número 3</label><br>
+                <input name="numero3" type="number" placeholder="0" id="numero3"><br>
+                <label for="soma">Soma</label><br>
+                <input name="soma" type="number" placeholder="0" id="soma"><br>
+                <input type="button" class="btn btn-dark" onclick="somar()" value="somar"><br>
+            </div>
+        </form>
+        <script src="exemplos.js"></script>
     </body>
 </html>

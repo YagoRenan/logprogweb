@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="exemplo.css" rel="stylesheet">
+        <title>Questão03</title>
+    </head>
+    <body>
+        <form>
+            <div class="form-group">
+                <label for="salarioa">Salário Antigo</label><br>
+                <input name="salarioa" type="number" placeholder="0" id="salarioa"><br>
+                <label for="porcentagem">Porcentagem de Aumento</label><br>
+                <input name="porcentagem" type="number" placeholder="0" id="porcentagem"><br>
+                <label for="salarionovo">Salário Novo</label><br>
+                <input name="salarionovo" type="number" placeholder="0" id="salarionovo" readonly><br>
+                <input type="button" class="btn btn-dark" onclick="novosalario()" value="nSalario"><br>
+                
+            </div>
+        </form>
+        <script src="exemplos.js"></script>
+    </body>
+</html>

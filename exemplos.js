@@ -25,6 +25,18 @@ function somar(){
     document.getElementById("soma").value = somar;
 
 }
+function somarAlert(){
+     //entrada de dados
+     let base = window.prompt("Digite medida da base","0");
+     let altura = window.prompt("Digite medidas","0");
+ 
+     //processamento
+     let area = base * altura /2;
+ 
+     //saida
+ 
+     window.alert("A área é " + area);
+}
 
 function novosalario(){
     //recuperação de dados
@@ -45,7 +57,7 @@ function mediaa(){
     var nota2 = parseFloat(document.getElementById("nota2").value);
     var nota3 = parseFloat(document.getElementById("nota3").value);
     var nota4 = parseFloat(document.getElementById("nota4").value);
-    console.log("TExt");
+  
 
     //processamento 
     var nota= (nota1 + nota2 + nota3 + nota4)/4;

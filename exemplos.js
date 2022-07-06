@@ -105,3 +105,32 @@ function mediaaAlert(){
     //saida
     window.alert("A média é " + notaa);
 }
+
+function mediap(){
+    //recuperação de dados 
+    let nota1 = parseFloat(document.getElementById("Nota1").value);
+    let peso1 = parseFloat(document.getElementById("peso1").value);
+    let nota2 = parseFloat(document.getElementById("Nota2").value);
+    let peso2 = parseFloat(document.getElementById("peso2").value);
+
+    //processamento 
+    let mediapp= (nota1 * peso1 + nota2 * peso2)/(peso1 + peso2);
+
+    //saida 
+    document.getElementById("media").value = mediapp.toFixed(1);
+}
+
+function mediapALert(){
+    //recuperação de dados 
+    let nota1 = parseFloat(window.prompt("Digite a primeira nota ","0") );
+    let peso1 = parseFloat(window.prompt("Digte o primeiro peso ","0") );
+    let nota2 = parseFloat(window.prompt("Digite a segunda nota ","0") );
+    let peso2 = parseFloat(window.prompt("Digte o segundo peso ","0") );
+    
+    //processamento
+    let mediapp = (nota1 * peso1 + nota2 * peso2)/(peso1 + peso2);
+
+    //saida
+    window.alert("A media é " + mediapp.toFixed(1));
+
+}

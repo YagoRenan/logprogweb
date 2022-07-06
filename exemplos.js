@@ -10,6 +10,20 @@ function calculaArea2(){
  document.getElementById("area").value = area;
 }
 
+
+function calculaAreaAlert(){
+    //recuperação de entradas
+ var base   = parseFloat(window.prompt("Digite a base ","0") );
+ let altura = parseFloat(window.prompt("DIgite a altura ","0") );
+
+
+ //processamento
+ var area = (base*altura)/2;
+
+//saida
+ window.alert("A Área é " + area);
+}
+
 function somar(){
     //recuperação de dados
     var numero1 = parseFloat(document.getElementById("numero1").value);

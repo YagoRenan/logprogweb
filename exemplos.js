@@ -134,3 +134,43 @@ function mediapALert(){
     window.alert("A media é " + mediapp.toFixed(1));
 
 }
+
+function calcular(){
+    //recuperação de dados 
+    let raio = parseFloat(document.getElementById("raio").value);
+    
+    
+    //processamento
+    let pi = 3.14;
+    let diametro = 2 * raio;
+    let comprimento = 2 * pi * raio;
+    let area = 2 * pi * (raio*raio);
+    let volume = 4/3 * pi * (raio*raio*raio);
+
+    //saida
+    document.getElementById("diametro").value = diametro;
+    document.getElementById("comprimento").value = comprimento.toFixed(2);
+    document.getElementById("area").value = area;
+    document.getElementById("volume").value = volume.toFixed(2);
+}
+
+function calcularAlert(){
+
+    let raio = parseFloat(window.prompt("Digite o valor do Raio ","0") );
+
+    //processamento 
+    let pi = 3.14;
+    let diametro = 2 * raio;
+    let comprimento = 2 * pi * raio;
+    let area = 2 * pi * (raio*raio);
+    let volume = 4/3 * pi * (raio*raio*raio);
+
+    //saida 
+     window.alert("Diâmentro é " + diametro);
+     window.alert("Comprimento é " + comprimento.toFixed(2));
+     window.alert("A Área é " + area);
+     window.alert("O volume é " + volume.toFixed(2));
+
+
+
+}

@@ -65,6 +65,16 @@ function novosalario(){
     //saida
     document.getElementById("salarionovo").value = nsalario;
 }
+function novosalarioAlerta(){
+    let salarioantigo = parseFloat(window.prompt("Digite o Salário Antigo ","0") );
+    let porcentagema = parseFloat(window.prompt("Digite a porcentagem de aumento ","0") );
+
+    //processamento 
+    let nvsalario = salarioantigo + (salarioantigo * porcentagema)/100;
+
+    //saida
+    window.alert("O novo salario é " + nvsalario);
+}
 
 function mediaa(){
     //recuperação de dados
@@ -79,4 +89,19 @@ function mediaa(){
 
     //saida 
     document.getElementById("media").value = nota;
+}
+
+function mediaaAlert(){
+    //recuperação de dados
+    let nota1 = parseFloat(window.prompt("Digite a primeira nota " , "0") );
+    let nota2 = parseFloat(window.prompt("Digite a segunda nota  " , "0") );
+    let nota3 = parseFloat(window.prompt("Digite a terceira nota " , "0") );
+    let nota4 = parseFloat(window.prompt("Digite a quarta nota   " , "0") ); 
+    
+    //processamento
+
+    let notaa= (nota1 + nota2 + nota3 + nota4 )/4;
+
+    //saida
+    window.alert("A média é " + notaa);
 }
